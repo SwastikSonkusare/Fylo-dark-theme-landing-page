@@ -117,7 +117,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-gap: 3rem; }
+  grid-gap: 3rem;
+  color: #fff; }
+  .productive__header {
+    color: currentColor;
+    font-size: 3.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    max-width: 33.3rem; }
+  .productive__right-section {
+    min-width: 33.3rem; }
+  .productive__paragraph--1, .productive__paragraph--2 {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    opacity: .75;
+    max-width: 42rem; }
+  .productive__works {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    border-bottom: 1px solid white;
+    grid-gap: .5rem; }
+  .productive__works-text {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    opacity: .5;
+    line-height: 2; }
+  .productive__works-image {
+    margin-top: .5rem;
+    width: 1.2rem;
+    height: 1.2rem; }
 
 .mb-sm {
   margin-bottom: 1rem; }
