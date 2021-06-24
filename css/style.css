@@ -41,12 +41,15 @@ body {
   position: relative;
   background-color: #202a3c;
   text-align: center; }
+  .hero__image {
+    max-width: 60rem;
+    height: 36rem; }
   .hero::after {
     content: "";
     display: block;
     background-image: url(../images/bg-curvy-desktop.svg);
     width: 100%;
-    height: 45%;
+    height: 48%;
     position: absolute;
     bottom: 0;
     left: 0;

@@ -66,6 +66,11 @@ body {
     background-color: hsl(219, 30%, 18%);
     text-align: center;
 
+    &__image {
+        max-width: 60rem;
+        height: 36rem;
+    }
+
 
 
     &::after {
@@ -73,7 +78,7 @@ body {
         display: block;
         background-image: url(../images/bg-curvy-desktop.svg);
         width: 100%;
-        height: 45%;
+        height: 48%;
         position: absolute;
         bottom: 0;
         left: 0;
