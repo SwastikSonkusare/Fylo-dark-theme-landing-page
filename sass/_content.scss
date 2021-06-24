@@ -176,9 +176,6 @@ body {
     grid-gap: 3rem;
     color: #fff;
 
-    &__image {
-
-    }
 
     &__header {
         color: currentColor;
@@ -222,6 +219,83 @@ body {
         margin-top: .5rem;
         width: 1.2rem;
         height: 1.2rem;
+    }
+}
+
+.founders {
+    
+    &__container {
+        
+        margin: 12rem 0;
+        padding: 0 10rem;
+        display: flex;
+        grid-gap: 3rem;
+        position: relative;
+
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     position: relative;
+        //     background-image: url(../images/bg-quotes.png);
+        //     width: 100px;
+        //     height: 100px;
+        // background-repeat: no-repeat;
+        // background-size: 50%;
+        // }
+    }
+
+    &__quotes {
+        position: absolute;
+        top: -48px;
+    }
+
+    &__card {   
+        background-color: hsl(219, 30%, 18%);
+        padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+        border-radius: 5px;
+        box-shadow: .6rem .6rem 0rem rgba(0, 0, 0, 20%);
+    }
+
+    &__paragraph {
+        margin-bottom: 2.5rem;
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;   
+        opacity: .75;
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__image {
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &__person {
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+
+        &--name {
+            color: inherit;
+            font-family: inherit;
+            font-size: 1.2rem;
+            font-weight: inherit;
+        }
+
+        &--position {
+            font-size: .8rem;
+            font-weight: inherit;
+            opacity: .75;
+        }
     }
 }
 

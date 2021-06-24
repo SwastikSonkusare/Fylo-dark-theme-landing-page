@@ -150,6 +150,57 @@ body {
     width: 1.2rem;
     height: 1.2rem; }
 
+.founders__container {
+  margin: 12rem 0;
+  padding: 0 10rem;
+  display: flex;
+  grid-gap: 3rem;
+  position: relative; }
+
+.founders__quotes {
+  position: absolute;
+  top: -48px; }
+
+.founders__card {
+  background-color: #202a3c;
+  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0.6rem 0.6rem 0rem black; }
+
+.founders__paragraph {
+  margin-bottom: 2.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  opacity: .75; }
+
+.founders__profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.founders__image {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 20px; }
+
+.founders__person {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+  .founders__person--name {
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: inherit; }
+  .founders__person--position {
+    font-size: .8rem;
+    font-weight: inherit;
+    opacity: .75; }
+
 .mb-sm {
   margin-bottom: 1rem; }
 
