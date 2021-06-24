@@ -61,14 +61,14 @@ body {
 }
 
 .hero {
-    padding-bottom: 22rem;
+    padding-bottom: 19rem;
     position: relative;
     background-color: hsl(219, 30%, 18%);
     text-align: center;
 
     &__image {
-        max-width: 60rem;
-        height: 36rem;
+        max-width: 64rem;
+        height: 100%;
     }
 
 
@@ -128,27 +128,82 @@ body {
 }
 
 
-.main {
+.cta {
     background-color: hsl(218, 28%, 13%);
+}
+
+.main {
+    padding: 0 20rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-gap: 4rem;
+    text-align: center;
 
     
 
     &__content {
-
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
     }
+
+    &__image {
+        margin-bottom: 2rem;
+        
+    }
+    
+    &__header {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-family: inherit;
+        color: currentColor;
+    }
+
+    &__paragraph {
+        font-size: 1.3rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: currentColor;
+        opacity: .75;
+    }
+}
+
+.productive {
+    padding: 0 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3rem;
 
     &__image {
 
     }
 
-    &__header {
+    &__right-section {
+
+        &__hero-header {
+
+        }
+    }
+
+    &__paragraph-1 {
+        
+    }
+
+    &__paragraph-2 {
 
     }
 
-    &__paragraph {
+    &__works {
+        
+    }
+
+    &__works-image {
 
     }
 }
+
+
 
 
 //Utilites helper classes
@@ -177,4 +232,7 @@ body {
 }
 .mt-xxl {
     margin-top: 6rem;
+}
+.mt-xxxl {
+    margin-top: 10rem;
 }
