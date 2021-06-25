@@ -102,7 +102,7 @@ body {
 .main {
   padding: 0 20rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
   grid-gap: 4rem;
   text-align: center; }
   @media only screen and (max-width: 43.75em) {
@@ -126,7 +126,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: currentColor;
-    opacity: .75; }
+    opacity: .75;
+    max-width: 35rem;
+    margin: auto; }
 
 .productive {
   padding: 0 10rem;
