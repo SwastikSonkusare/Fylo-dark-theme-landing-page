@@ -2,11 +2,16 @@
     padding: 0 2rem 19rem 2rem;
     position: relative;
     background-color: $bg-color-dark-blue-4;
-    text-align: center;
+    
+    @media only screen and (max-width: 43.75em) {
+        padding: 0 2rem 12rem 2rem;
+    }
 
     &__image {
         max-width: 50rem;
         width: 100%;
+        position: relative;
+        z-index: 10;
     }
 
 
@@ -27,7 +32,9 @@
         
         
         @media only screen and (max-width: 43.75em) {
+            height: 60%;
             background-image: url(../images/bg-curvy-mobile.svg);
+            background-size: 146% 106%;
         }
     }
     
@@ -42,10 +49,9 @@
     
     &__button {
         margin-top: 3rem;
+        border: none;
         padding: 1.2rem 5rem;
-        color: $color-white;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
+        @include raleway;
         font-size: 1.2rem;
         background-color: $color-blue;
         border-radius: 30px;

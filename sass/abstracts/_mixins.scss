@@ -1,0 +1,11 @@
+@mixin raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $color-white;
+}
+
+@mixin open-sans {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: $color-white;
+}
