@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+.text-align {
+    text-align: center;
+}
+
+.cta {
+    background-color: $bg-color-dark-blue-2;
+}
+
+.main {
+    padding: 0 20rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    grid-gap: 4rem;
+    text-align: center;
+
+    
+    @media only screen and (max-width: 43.75em) {
+        padding: 0 6rem;
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, 1fr);     
+    }
+    
+
+    &__content {
+        color: $color-white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+
+    &__image {
+        margin-bottom: 2rem;     
+    }
+    
+}
+
+.productive {
+    padding: 0 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3rem;
+    color: $color-white;
+
+
+    
+    @media only screen and (max-width: 56.25em) {
+        flex-direction: column;
+        padding: 0 6rem;
+    }
+
+
+    &__image {
+        max-width: 46rem;
+        width: 100%;
+    }
+
+
+    &__right-section {
+        max-width: 40.3rem;
+    }
+
+    &__works {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        border-bottom: 1px solid $color-white;
+        grid-gap: .5rem;
+        cursor: pointer;
+        transition: all .2s ease-out;
+        
+        &:hover {
+            padding: .2rem;
+            transform: translateY(-3px);
+            background-color: #000;
+        }
+    }
+    
+
+    &__works-image {
+        margin-top: .5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+.founders {
+    
+    &__container {
+        
+        margin: 12rem 0;
+        padding: 0 10rem;
+        display: flex;
+        grid-gap: 3rem;
+        position: relative;
+
+        
+        @media only screen and (max-width: 43.75em) {
+            margin: 20rem 0 0 0;
+        }
+
+        @media only screen and (max-width: 56.25em) {
+            flex-direction: column;
+            padding: 0 3rem;
+        }
+    }
+
+    &__quotes {
+        position: absolute;
+        top: -48px;
+    }
+
+    &__card {   
+        background-color: $bg-color-dark-blue-4;
+        padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+        border-radius: 5px;
+        box-shadow: .6rem .6rem 0rem rgba(0, 0, 0, 20%);
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__image {
+        margin-right: 1rem;
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &__modal {
+        background-color: $bg-color-dark-blue-2;
+        margin: 0 auto;
+        max-width: 75rem;
+        padding: 4rem;
+        border-radius: 6px;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 6);
+        transform: translateY(35%);
+
+        @media only screen and (max-width: 43.75em) {
+            margin: 0 2rem;
+        }
+    }
+
+
+    &__input-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-gap: 3rem;
+        margin-top: 3rem;
+
+        @media only screen and (max-width: 56.25em) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {  
+        flex-basis: 68%;
+        padding: 1.3rem 3.5rem;
+        border: none;
+        border-radius: 30px;
+
+        @media only screen and (max-width: 56.25em) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color:  $color-cyan;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+

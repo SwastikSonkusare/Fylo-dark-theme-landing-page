@@ -1,0 +1,40 @@
+
+.navbar {
+    padding: 5rem;
+    background-color: $bg-color-dark-blue-4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 31.25em) {
+        flex-direction: column;
+        grid-gap: 1rem;
+        padding: 2rem;
+    }
+    
+    &__logo {
+        width: 15rem;
+        height: 4.7rem;
+    }
+    
+    &__items {
+        display: flex;
+        list-style: none;
+    }   
+    
+    &__item {
+        
+        &:not(:last-of-type) {
+            margin-right: 3rem;
+        }
+    }
+    
+    &__links {
+        font-size: 1.2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        color: $color-white;
+
+    }
+}

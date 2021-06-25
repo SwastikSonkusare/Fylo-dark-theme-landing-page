@@ -1,0 +1,53 @@
+.hero {
+    padding: 0 2rem 19rem 2rem;
+    position: relative;
+    background-color: $bg-color-dark-blue-4;
+    text-align: center;
+
+    &__image {
+        max-width: 50rem;
+        width: 100%;
+    }
+
+
+
+    &::after {
+        content: "";
+        display: block;
+        background-image: url(../images/bg-curvy-desktop.svg);
+        width: 100%;
+        height: 48%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        
+        
+        @media only screen and (max-width: 43.75em) {
+            background-image: url(../images/bg-curvy-mobile.svg);
+        }
+    }
+    
+   
+    
+    &__content {
+        color: $color-white;
+        position: relative;
+        z-index: 10;
+    }
+
+    
+    &__button {
+        margin-top: 3rem;
+        padding: 1.2rem 5rem;
+        color: $color-white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        background-color: $color-blue;
+        border-radius: 30px;
+    }
+}
