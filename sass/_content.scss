@@ -38,6 +38,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 31.25em) {
+        flex-direction: column;
+        grid-gap: 1rem;
+        padding: 2rem;
+    }
     
     &__logo {
         width: 15rem;
@@ -66,14 +72,14 @@ body {
 }
 
 .hero {
-    padding-bottom: 19rem;
+    padding: 0 2rem 19rem 2rem;
     position: relative;
     background-color: hsl(219, 30%, 18%);
     text-align: center;
 
     &__image {
-        max-width: 64rem;
-        height: 100%;
+        max-width: 50rem;
+        width: 100%;
     }
 
 
@@ -91,6 +97,11 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 1;
+        
+        
+        @media only screen and (max-width: 43.75em) {
+            background-image: url(../images/bg-curvy-mobile.svg);
+        }
     }
     
    
@@ -145,6 +156,12 @@ body {
     text-align: center;
 
     
+    @media only screen and (max-width: 43.75em) {
+        padding: 0 6rem;
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, 1fr);     
+    }
+    
 
     &__content {
         color: #fff;
@@ -181,6 +198,17 @@ body {
     grid-gap: 3rem;
     color: #fff;
 
+    
+    @media only screen and (max-width: 56.25em) {
+        flex-direction: column;
+        padding: 0 6rem;
+    }
+
+
+    &__image {
+        max-width: 46rem;
+        width: 100%;
+    }
 
     &__header {
         color: currentColor;
@@ -188,11 +216,14 @@ body {
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
         max-width: 33.3rem;
+        
+        @media only screen and (max-width: 43.75em) {
+            font-size: 1.6rem;
+        }
     }
 
     &__right-section {
-        min-width: 33.3rem;
-       
+        max-width: 40.3rem;
     }
 
     &__paragraph--1, 
@@ -211,6 +242,13 @@ body {
         border-bottom: 1px solid white;
         grid-gap: .5rem;
         cursor: pointer;
+        transition: all .2s ease-out;
+        
+        &:hover {
+            padding: .2rem;
+            transform: translateY(-3px);
+            background-color: #000;
+        }
     }
     
     &__works-text {
@@ -238,16 +276,15 @@ body {
         grid-gap: 3rem;
         position: relative;
 
-        // &::before {
-        //     content: "";
-        //     display: block;
-        //     position: relative;
-        //     background-image: url(../images/bg-quotes.png);
-        //     width: 100px;
-        //     height: 100px;
-        // background-repeat: no-repeat;
-        // background-size: 50%;
-        // }
+        
+        @media only screen and (max-width: 43.75em) {
+            margin: 20rem 0 0 0;
+        }
+
+        @media only screen and (max-width: 56.25em) {
+            flex-direction: column;
+            padding: 0 3rem;
+        }
     }
 
     &__quotes {
@@ -307,11 +344,15 @@ body {
     &__modal {
         background-color: hsl(218, 28%, 13%);
         margin: 0 auto;
-        max-width: 55vw;
-        padding: 4rem 7rem;
+        max-width: 55rem;
+        padding: 4rem;
         border-radius: 6px;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 6);
         transform: translateY(35%);
+
+        @media only screen and (max-width: 43.75em) {
+            margin: 0 2rem;
+        }
 
 
     }
@@ -341,6 +382,10 @@ body {
         align-items: center;
         grid-gap: 3rem;
         margin-top: 3rem;
+
+        @media only screen and (max-width: 56.25em) {
+            flex-direction: column;
+        }
     }
 
     &__input {  
@@ -348,6 +393,10 @@ body {
         padding: 1.3rem 3.5rem;
         border: none;
         border-radius: 30px;
+
+        @media only screen and (max-width: 56.25em) {
+            width: 100%;
+        }
 
         &::placeholder {
             color:  hsl(176, 68%, 64%);
@@ -359,31 +408,45 @@ body {
     }
 
     &__button {
-        all: unset;
-        padding: 1.5rem 2.5rem;
+        padding: 1.5rem 2rem;
         color: #fff;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 1.3rem;
         background-color: hsl(224, 93%, 58%);
+        border: none;
         border-radius: 30px;
+
+        @media only screen and (max-width: 56.25em) {
+            width: 100%;
+        }
+        
     }
 }
 
 .footer {
     background-color: hsl(216, 53%, 9%);
     padding: 16rem 8rem 8rem 10rem;
+    
+    @media only screen and (max-width: 43.75em) {
+        padding: 22rem 4rem 6rem 4rem;
+    }
 
     &__container {
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (max-width: 56.25em) {
+            flex-direction: column;
+            grid-gap: 2rem;
+        }
     }
 
     &__lorem {
         color: #fff;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 1.3rem;
         max-width: 22rem;
         opacity: .75;
     }
@@ -418,7 +481,7 @@ body {
             color: #fff;
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
-            font-size: 1rem;
+            font-size: 1.3rem;
             opacity: .75;
         }
     }
@@ -436,13 +499,14 @@ body {
             color: #fff;
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
-            font-size: 1rem;
+            font-size: 1.3rem;
             opacity: .75;
         }
     }
 
     &__items {
         list-style: none;
+        margin-top: 3.5rem;
     }
 
     &__item {
@@ -450,11 +514,19 @@ body {
         color: #fff;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         opacity: .75;
 
         &:not(:last-of-type) {
             margin-bottom: 1rem;
+        }
+    }
+
+    &__social-media-icons {
+
+        @media only screen and (max-width: 56.25em) {
+            margin-top: 3rem;
+            text-align: center;
         }
     }
 
